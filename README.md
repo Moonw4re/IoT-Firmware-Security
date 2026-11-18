@@ -149,6 +149,38 @@ The project successfully demonstrated firmware extraction, file system analysis,
 
 The findings highlight the security risks associated with insecure firmware development and insufficient input validation in embedded systems.
 
+## 08.1 // Proof of Concept
+
+### 01 - Firmware Acquisition
+
+We obtained the NETGEAR WNAP320 firmware for security analysis.
+
+<img src="./IMG_7905.png" width="100%"/>
+
+### 02 - Firmware Extraction
+
+We extracted the firmware package to access its internal components.
+
+<img src="./IMG_7906.png" width="100%"/>
+
+### 03 - Binwalk Analysis
+
+We analyzed the firmware using Binwalk to examine its embedded file system.
+
+<img src="./IMG_7907.png" width="100%"/>
+
+### 04 - File System Analysis
+
+We examined the extracted directories, configuration files, and web application components.
+
+<img src="./IMG_7908.png" width="100%"/>
+
+### 05 - Vulnerable Source Code Analysis
+
+We identified insecure input handling in the PHP source code that could lead to OS command injection.
+
+<img src="./IMG_7909.png" width="100%"/>
+
 ---
 
 ## 09 // Technical Challenges
